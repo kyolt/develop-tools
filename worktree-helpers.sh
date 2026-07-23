@@ -103,7 +103,7 @@ wtclean() {
   local repo parent dir
   repo=$(basename "$main_root")
   parent=$(dirname "$main_root")
-  dir="$HOME/linker/codes/worktree/${repo}-${1##*/}"
+  dir="$HOME/linker/codes/worktrees/${repo}-${1##*/}"
 
   git worktree remove "$dir" && echo "🗑️  已移除 $dir"
   git worktree prune
