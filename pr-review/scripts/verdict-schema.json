@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": ["confirmed", "confirmed_with_caveat", "refuted", "unverifiable"]
+    },
+    "reasoning": {
+      "type": "string",
+      "description": "One or two sentences: what you checked in the actual code and what you found."
+    }
+  },
+  "required": ["verdict", "reasoning"],
+  "additionalProperties": false
+}
